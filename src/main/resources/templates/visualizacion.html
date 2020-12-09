@@ -3,35 +3,32 @@
 <head>
 <link th:ref="@{/css/style.css}" rel="stylesheet" type="text/css" href="../static/css/style.css">
 <meta charset="ISO-8859-1">
-<title>Hotel Messi</title>
+<title>Hotel Dovago</title>
 </head>
 
 <body>
 	
-	<nav>
-		<a class="nav" href="login.html">Login</a>
-		<a class="nav" href="reserva.html">Reserva</a>
-		<a class="nav" href="visualizacion.html">Visualizacion</a>
+	<header>
+		<div class="cabeza">
+    		<h1>Hotel Dovago</h1>
+  		</div>
+	</header>
+	
+	<nav class="navegador">
+		<div class="nav">
+		<a class="navs" href="login.html">Login</a>
+		<a class="navs" href="reserva.html">Reservar</a>
+		<a class="navs" href="visualizacion.html">Reservas</a>
+		</div>
 	</nav>
 	
-	<div class="container">
-		<h2>Ingresar</h2>
-	  	<form>
-	    	<input type="text" class="email" placeholder="Usuario"><br/>
-	    	<input type="text" class="pwd" placeholder="Contraseña">
-	  	</form>
-	  	<button class="register">
-	    	<span>Registrar</span>
-	  	</button>
-	  	<button class="signin">
-	    	<span>Iniciar sesion</span>
-	  	</button>
-	  	<h3>¡Su registro esta completo!</h3>
-	  	<h3>¡Sesion iniciada!</h3>
-	  	<div class="reg"></div>
-	  	<div class="sig"></div>
-	</div>
+	<h2 class="titNot">Usted eligio: </h2>
+	
 	
 </body>
+
+<footer class="pie">
+	Avda. Pedro Ortiz de Zarate N°455 - Tel 3884789555
+</footer>
 
 </html>

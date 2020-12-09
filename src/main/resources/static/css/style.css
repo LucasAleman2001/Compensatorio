@@ -1,100 +1,175 @@
 @charset "ISO-8859-1";
 
-*{
-  margin:0;
-  padding:0;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
+.cabeza{
+	text-align: center;
+	color: #fff;
+	padding:0,9%;
+	font-size: x-large;
+}
+.navegador{
+	margin: 1%;
+	padding: 1%;
+	background: #EA9522;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.navs{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 1%;
+  text-align: center;
 }
 
-body{
-  font-family: 'Open Sans', sans-serif;
-  background:#e2e2e2;
+.login-page {
+  width: 360px;
+  padding: 1%;
+  margin: auto;
 }
 
-svg{
-  position:fixed;
-  top:10px;
-  left:180px;
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  padding-top: 20px;
+  padding: 8%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.container{
-  position:relative;
-  top:100px;
-  left:35%;
-  display:block;
-  margin-bottom:80px;
-  width:500px;
-  height:360px;
-  background:#fff;
-  border-radius:5px;
-  overflow:hidden;
-  z-index:1;
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-h2{
-  padding:40px;
-  font-weight:lighter;
-  text-transform:uppercase;
-  color:#414141;
+.message{
+	color: #9C9A94;
 }
 
-input{
-  display:block;
-  height:50px;
-  width:90%;
-  margin:0 auto;
-  border:none;
-  color:#ff5722;
-  outline:none;
-  border-bottom:1px solid #ff5722;
-  color:#ff5722;
-  position:relative;
+.link {
+  color: #EA9522;
+  text-decoration: none;
 }
 
-.email,
-.pwd{
-  position:relative;
-  z-index:1;
-  border-bottom:1px solid rgba(0,0,0,.1);
-  padding-left:20px;
-  font-family: 'Open Sans', sans-serif;
-  text-transform:uppercase;
-  color:#858585;
-  font-weight:lighter;
+.linkG{
+	color: white;
+	text-align: center;
+	padding: 5px;
+	
 }
 
-.link{
-  text-decoration:none;
-  display:inline-block;
-  margin:27px 28%;
-  text-transform:uppercase;
-  color:#858585;
-  font-weight:lighter;
+body {
+  background: #E7C51C;  
 }
 
-button{
-  cursor:pointer; 
-  display:inline-block;
-  float:left;
-  width:250px;
-  height:60px;
-  margin-top:-10px;
-  border:none;
-  font-family: 'Open Sans', sans-serif;
-  text-transform:uppercase;
-  color:#fff;
-  background:blue;
+.pie{
+	text-align: center;
+	padding-top: 8%;
+	color: white;
+	border: 0.5px solid EA9522;
 }
 
-h3{
-  position:absolute;
-  top:-100%;
-  left:20%; 
-  text-transform:uppercase;
-  font-weight:bolder;
-  color:rgba(255,255,255,.3);
-  -webkit-transition:.3s ease-in-out 1.2s;
-  transition:.3s ease-in-out 1.2s;
+
+.imagen{
+	width: 80%;
+	height: 80%;
+}
+
+.imagenG{
+	width: 40%;
+	height: auto;
+	padding-left: 3%;
+	padding-top: 3%;
+}
+
+.titNot{
+	color: white;
+	padding: 0px 20px; 
+	padding-bottom: 10px;
+}
+
+.noti{
+	flex: auto;
+	padding: 2% 5%;
+	width: 15%;
+	margin: auto;
+}
+
+.noti1{
+	flex: auto;
+	padding: 2% 3%;
+	width: 15%;
+	margin: auto;
+}
+
+.contenido{
+	display: -ms-flexblock;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.contG{
+	display: flex;
+	padding: 20px;
+}
+
+.imgCont{
+	padding-right: 10px;
+    margin-left: 57px;
+    float: left;
+    position: relative;
+    width: 60%;
+    height: auto;
+}
+
+.imgContG{
+	padding-right: 10px;
+    float: left;
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.infCont{
+	padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+    width: 45%;
+    height: auto;
+}
+
+.infCont1{
+	padding-top: 20px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+    width: 45%;
+    height: auto;
+}
+.infContG{
+	padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+    width: 45%;
+    height: auto;
+}
+
+
+.tipoUser{
+	display: flex;
+	float: left;
 }

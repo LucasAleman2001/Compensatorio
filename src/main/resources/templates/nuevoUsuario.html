@@ -3,26 +3,48 @@
 <head>
 <link th:ref="@{/css/style.css}" rel="stylesheet" type="text/css" href="../static/css/style.css">
 <meta charset="ISO-8859-1">
-<title>Hotel Messi</title>
+<title>Hotel Dovago</title>
 </head>
 
 <body>
 	
-	<nav>
-		<a class="nav" href="login.html">Login</a>
-		<a class="nav" href="reserva.html">Reserva</a>
-		<a class="nav" href="visualizacion.html">Visualizacion</a>
+	<header>
+		<div class="cabeza">
+    		<h1>Hotel Dovago</h1>
+  		</div>
+	</header>
+	
+	<nav class="navegador">
+		<div class="nav">
+		<a class="navs" href="login.html">Login</a>
+		<a class="navs" href="reserva.html">Reservar</a>
+		<a class="navs" href="visualizacion.html">Reservas</a>
+		</div>
 	</nav>
 	
-	<form id="form" class="topBefore">
-		
-		  DNI<input class="dni" type="text" placeholder="DNI">
-		  Usuario<input class="user" type="text" placeholder="Usuario">
-		  Contraseña<input class="password" type="password" placeholder="Contraseña">
-		  Nombre<input class="nombre" type="text" placeholder="Nombre">
-		  Apellido<input class="apellido" type="text" placeholder="Apellido">
-		  Genero<input class="genero" type="text" placeholder="Genero">
+	<div class="login-page">
+  		<div class="form">
+    		<form class="login-form">
+    			<div>
+				 	<p><label for="text">¡Ingresa tus datos aqui!</label></p>
+				 	<input class="user" type="text" placeholder="Usuario">
+				 	<input class="password" type="password" placeholder="Contraseña">
+				 	<input class="nombre" type="text" placeholder="Nombre">
+				 	<input class="apellido" type="text" placeholder="Apellido">
+				 	<input class="dni" type="text" placeholder="DNI">
+				 	<input class="genero" type="text" placeholder="Genero">
+				 	<p>¿Usted es?</p>
+				 	<input class="genero" type="text" placeholder="Cliente - Admin">
+			  		<p><a class="link" href="reserva.html">Ingresar</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
 
-		  <a class="nav" href="reserva.html"><span>Ingresar</span></a>
+</body>
 
-	</form>
+<footer class="pie">
+	Avda. Pedro Ortiz de Zarate N°455 - Tel 3884789555
+</footer>
+
+</html>

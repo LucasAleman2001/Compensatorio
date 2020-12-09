@@ -3,18 +3,94 @@
 <head>
 <link th:ref="@{/css/style.css}" rel="stylesheet" type="text/css" href="../static/css/style.css">
 <meta charset="ISO-8859-1">
-<title>Hotel Messi</title>
+<title>Hotel Dovago</title>
 </head>
 
 <body>
 	
-	<nav>
-		<a class="nav" href="login.html">Login</a>
-		<a class="nav" href="reserva.html">Reserva</a>
-		<a class="nav" href="visualizacion.html">Visualizacion</a>
+	<header>
+		<div class="cabeza">
+    		<h1>Hotel Dovago</h1>
+  		</div>
+	</header>
+	
+	<nav class="navegador">
+		<div class="nav">
+		<a class="navs" href="login.html">Login</a>
+		<a class="navs" href="reserva.html">Reservar</a>
+		<a class="navs" href="visualizacion.html">Reservas</a>
+		</div>
 	</nav>
 	
+	<div class="col-9">
+			<section class="noticias">
+				<h2 class="titNot">Habitaciones</h2>
+				<div class="contenido">
+					<div class="noti1">
+						<div class="imgCont">
+							<img class="imagen" src="../static/img/habPrim.jpg" class="img">
+						</div>
+						<div class="infCont">
+							<h3>
+							<a class="linkG" href="primavera.html">Primavera</a>
+							</h3>
+						</div>
+					</div>
+					<div class="noti">
+						<div class="imgCont">
+							<img class="imagen" src="../static/img/habEjec.jpg" class="imgMed">
+						</div>
+						<div class="infCont">
+							<h3><a class="linkG" href="ejecutivo.html">Ejecutivo</a></h3>
+						</div>
+					</div>
+					<div class="noti1">
+						<div class="imgCont">
+							<img class="imagen" src="../static/img/habDePasada.jpg" class="img">
+						</div>
+						<div class="infCont">
+							<h3><a class="linkG" href="dePasada.html">"De pasada"</a></h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="noticias">
+				<div class="contenido">
+					<div class="noti1">
+						<div class="imgCont">
+							<img class="imagen" src="../static/img/habEjecPremium.jpg" class="img">
+						</div>
+						<div class="infCont">
+							<h3>
+							<a class="linkG" href="ejecutivoPremium.html">Ejecutivo Premium</a>
+							</h3>
+						</div>
+					</div>
+					<div class="noti">
+						<div class="imgCont">
+							<img class="imagen" src="../static/img/habLujuria.jpg" class="imgMed">
+						</div>
+						<div class="infCont">
+							<h3><a class="linkG" href="lujuria.html">Lujuria</a></h3>
+						</div>
+					</div>
+					<div class="noti1">
+						<div class="imgCont">
+							<img class="imagen" src="../static/img/habMadera.jpg" class="img">
+						</div>
+						<div class="infCont">
+							<h3><a class="linkG" href="chill.html">Chill</a></h3>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 	
 </body>
+
+<footer class="pie">
+	Avda. Pedro Ortiz de Zarate N°455 - Tel 3884789555
+</footer>
 
 </html>

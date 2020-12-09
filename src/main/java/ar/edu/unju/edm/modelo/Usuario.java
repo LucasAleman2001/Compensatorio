@@ -22,10 +22,12 @@ public class Usuario implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO, generator="native")
-	@GenericGenerator(name="native", strategy="natuve")
+	@GenericGenerator(name="native", strategy="native")
 	private Long idUsuario;
 	@Column
 	private int dni;
+	@Column
+	private String user;
 	@Column
 	private String password;
 	@Column
@@ -39,10 +41,11 @@ public class Usuario implements Serializable{
 		
 	}
 
-	public Usuario(Long idUsuario, int dni, String password, String nombre, String apellido, String genero) {
+	public Usuario(Long idUsuario, int dni, String user, String password, String nombre, String apellido, String genero) {
 		super();
 		this.idUsuario = idUsuario;
 		this.dni = dni;
+		this.user = user;
 		this.password = password;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -64,7 +67,15 @@ public class Usuario implements Serializable{
 	public void setDni(int dni) {
 		this.dni = dni;
 	}
+	
+	public String getUser() {
+		return user;
+	}
 
+	public void setUser(String user) {
+		this.user = user;
+	}
+	
 	public String getPassword() {
 		return password;
 	}

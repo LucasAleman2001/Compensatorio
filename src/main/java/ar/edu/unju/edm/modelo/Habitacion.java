@@ -25,6 +25,8 @@ public class Habitacion implements Serializable{
 	@GenericGenerator(name="native", strategy="native")
 	private Long idHab;
 	@Column
+	private String nombreHab;
+	@Column
 	private int numeroHab;
 	@Column
 	private String detallesHab;
@@ -41,10 +43,11 @@ public class Habitacion implements Serializable{
 		
 	}
 
-	public Habitacion(Long idHab, int numeroHab, String detallesHab, double costo, String disponibilidad, String tipo,
-			int dato) {
+	public Habitacion(Long idHab, String nombreHab, int numeroHab, String detallesHab, double costo,
+			String disponibilidad, String tipo, int dato) {
 		super();
 		this.idHab = idHab;
+		this.nombreHab = nombreHab;
 		this.numeroHab = numeroHab;
 		this.detallesHab = detallesHab;
 		this.costo = costo;
@@ -59,6 +62,14 @@ public class Habitacion implements Serializable{
 
 	public void setIdHab(Long idHab) {
 		this.idHab = idHab;
+	}
+
+	public String getNombreHab() {
+		return nombreHab;
+	}
+
+	public void setNombreHab(String nombreHab) {
+		this.nombreHab = nombreHab;
 	}
 
 	public int getNumeroHab() {
